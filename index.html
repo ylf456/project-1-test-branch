@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iExercise</title>
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+</head>
+
+<body>
+    <section>
+        <div class="nav-bar">
+            <h1 id="logo">iExercise</h1>
+            <ul id="nav-links">
+                <li>About</li>
+                <li>Workout</li>
+                <li>Credits</li>
+            </ul>
+        </div>
+    </section>
+    <section class="title-box">
+        <div class="title-container">
+            <h2 id="title">iExercise</h2>
+            <p id="description">Description of webpage goes here</p>
+            <button id="start-btn">Start your Workout!</button>
+        </div>
+        <div id="credits">
+            <p>Created By Andres, Yilun, and AJ</p>
+        </div>
+    </section>
+    <form class="form-box hidden">
+        <h1>Choose Your Workout</h1>
+        <label for="choice"></label>
+        <select name="choice" id="choiceE">
+
+            <option disabled selected id="selection">Choose a Exercise Type</option>
+            <option value="cardio-typeE">Cardio</option>
+            <option value="olympic_weightlifting-typeE">Olympic Weight Lifting</option>
+            <option value="plyometrics-typeE">Plyometrics</option>
+            <option value="powerlifting-typeE">Powerlifting</option>
+            <option value="strength-typeE">Strength</option>
+            <option value="stretching-typeE">Stretching</option>
+            <option value="strongman-typeE">Strong Man</option>
+
+            <option disabled selected id="selection" >Choose a Muscle Group</option>
+          
+            <option value="abdonminals-muscleE">Abdominals</option>
+            <option value="abductors-muscleE">Abductors</option>
+            <option value="adductors-muscleE">Adductors</option>
+            <option value="biceps-muscleE">Biceps</option>
+            <option value="calves-muscleE">Calves</option>
+            <option value="chest-muscleE">Chest</option>
+            <option value="forearms-muscleE">Forearms</option>
+            <option value="glutes-muscleE">Glutes</option>
+            <option value="hamstrings-muscleE">Hamstrings</option>
+            <option value="lats-muscleE">Lats</option>
+            <option value="lower_back-muscleE">Lower_back</option>
+            <option value="middle_back-muscleE">Middle_back</option>
+            <option value="neck-muscleE">Neck</option>
+            <option value="quadriceps-muscleE">Quadriceps</option>
+            <option value="traps-muscleE">Traps</option>
+            <option value="triceps-muscleE">Triceps</option>
+
+            <option disabled selected id="selection">Choose a Difficulty</option>
+            <option value="beginner-difficultyE">Beginner</option>
+            <option value="intermediate-difficultyE">Intermediate</option>
+            <option value="expert-difficultyE">Expert</option>
+            <option disabled selected hidden>Select One</option>
+
+
+        </select>
+        <br>
+        <input id="saveButton" type="submit" value="Submit">
+    </form>
+
+    <div class="video-screen-container" id="video-screen-container">
+        <div data-state="hidden" class="youtube-video-and-link-container" id="">
+            <div class="youtube-screen" id="display"></div>
+
+        </div>
+    </div>
+
+    <div>
+        <span>Favorite List</span>
+        <ul id="FavoriteUlEl"></ul>
+        
+    </div>
+
+    <button id="clear-fav">clear favlist</button>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
